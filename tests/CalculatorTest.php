@@ -34,18 +34,7 @@ class CalculatorTest extends TestCase
         $this->assertEquals(5, $result);
     }
  
-    private $parImpar;
- 
-    protected function setUp()
-    {
-        $this->parImpar = new ParImpar();
-    }
- 
-    protected function tearDown()
-    {
-        $this->parImpar = NULL;
-    }
- 
+   
     public function testPar()
     {
         $result = $this->parImpar->esPar(2);
